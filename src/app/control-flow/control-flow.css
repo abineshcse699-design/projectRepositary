@@ -1,0 +1,15 @@
+.main{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.b1{
+  padding: 20px 40px;
+  background-color: #7fffd4;
+  border-radius: 20px;
+  font-size: large;
+}
+.col-1{
+  display: flex;
+  gap: 30px;
+}

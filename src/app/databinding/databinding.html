@@ -1,0 +1,44 @@
+<p>databinding works!</p>
+<h1>Naruto usumaki</h1>
+
+<div class="main">
+  <div class="row">
+    Course name:<span>{{courseName}}</span>
+
+  </div>
+  <div class="col">
+    courseDuration:{{courseDuration}}
+
+  </div>
+  <div class="col-1">
+  Status:<label for="">{{isActive}}</label>
+  </div>
+</div>
+<br>
+<br>
+<div class="main2">
+  <div class="col-1">
+    <input type="text"[value]="courseName">
+  </div>
+  <div class="col-2">
+   <input [type] ="myInputType">
+  </div>
+  <div>
+    <input type="checkbox"[value]="isActive">
+  </div>
+</div>
+<br>
+<div class="button">
+
+
+<div>
+  <button class="btn1" style="color:whitesmoke;" (click)="showAlert()">show alert</button>
+</div>
+<div>
+  <button class="btn1" style="background-color: bisque;" (click)="changeCourseName('set react')">set react</button>
+</div>
+<div>
+  <button class="btn1" style="background-color: chartreuse;"  (click)="changeCourseName('set dotnet')">set dotnet</button>
+</div>
+
+</div>

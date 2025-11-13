@@ -1,0 +1,52 @@
+<h1>control-flow</h1>
+
+   <div class="list">
+    @for (item of citylist; track $index) {
+      <ul>
+        <li>{{item}}</li>
+      </ul>
+    }
+
+    <div class="col">
+      <ul>
+        <li *ngFor="let city of citylist">{{city}}</li>
+      </ul>
+
+    </div>
+
+
+
+   </div>
+
+<div class="main">
+
+
+  <div class="col-1">
+    @if(isTextVisible()){
+       <input type="text" placeholder="enter the name">
+    }@else {
+      <h1>hidden text</h1>
+    }
+
+    <div class="col-1">
+      <input *ngIf="isTextVisible()" type="text"  placeholder="enter course name">
+
+    </div>
+
+
+  </div>
+  <div class="col-2">
+    <button class="b1" style="background-color: red;" (click)="showText()">show</button>
+
+    <button class="b1" style="background-color: chartreuse;"(click)="hideText()">hide</button>
+
+
+  </div>
+  <div class="col-3">
+    {{isText}}
+    <br>
+    {{isTextVisible()}}
+
+  </div>
+</div>
+

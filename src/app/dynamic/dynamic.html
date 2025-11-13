@@ -1,0 +1,47 @@
+<p>dynamic works!</p>
+
+<div class="row">
+  <div class="col3">
+<div class="p1" [ngClass]="divClassName">
+
+div - {{divClassName}}
+</div>
+  </div>
+
+
+ <div class="col4">
+<div [class]="'p1' + divClassName">
+  div -{{divClassName}}
+
+</div>
+  </div>
+
+
+  <div class="col4">
+<div class="p1" [style.color]="divClassName">
+  div -{{divClassName}}
+
+</div>
+  </div>
+
+ <div class="col4">
+<div class="p1" [ngStyle]="{'background-color':divClassName}" style="background-color: red;" >
+
+ div -{{divClassName}}
+</div>
+
+
+</div>
+  </div>
+
+
+
+
+<div class="row1">
+  <div class="col3">
+<div class="p1">
+  <input type="text" [(ngModel)]="divClassName">
+</div>
+  </div>
+</div>
+
